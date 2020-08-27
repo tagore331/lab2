@@ -1,0 +1,84 @@
+# Python Program to find the LCM of Two Numbers 
+num1 = int(input())
+num2 = int(input())
+if(num1 > num2 ):   # Use If condition to find the greatest number among these two.
+    max= num1
+else:
+    max= num2
+while(True):
+    if(max % num1 == 0 and max % num2 == 0):   
+        print(max)
+        break;
+    max= max+ 1
+    
+    input
+    12
+    24
+    
+    output
+    24
+    
+    
+   num1=int(input("Enter the first number: ")) 
+num2=int(input("Enter the second number: "))
+num3=int(input("Enter the third number: ")) 
+if(num1<=num2 and num1<=num3):   
+  print(num1," is the smallest")
+elif(num2<=num1 and num2<=num3):
+  print(num2," is the smallest")
+else:
+    print(num3," is the smallest")
+    
+    input:
+    enter the first number:45
+    enter the second number:46
+    enter the third number:34
+    
+    output:
+    smallest number is 34
+    
+    # Python Program - Find HCF and lcm
+print("Enter two numbers to find HCF and LCM: ");
+num1 = input();
+if num1 == 'x':
+    exit();
+else:
+    num2 = input();
+    number1 = int(num1);
+    number2 = int(num2);
+    temp1 = number1;
+    temp2 = number2;
+    while temp2 != 0:
+    	t = temp2;
+    	temp2 = temp1%temp2;
+    	temp1 = t;
+    hcf = temp1;
+    lcm = (number1*number2)/hcf;
+    print("HCF =",hcf);
+    print("LCM =",lcm);
+
+input
+enter two numbers to find lcm and hcf:3,5
+
+
+output:
+15,1
+
+import math
+x= int(input('Enter First Number'))
+y= int(input('Enter Second Number'))
+z= int(input('Enter Third Number'))
+gcd_ans = math.gcd(x,y)
+gcd_final =math.gcd(gcd_ans,z)
+lcm_ans=x*y/gcd_final
+print(lcm_ans)
+print(gcd_final)
+
+input: 
+Enter three numbers 2,4,6
+output:
+lcm is 12
+hcf is 2
+
+    
+      
